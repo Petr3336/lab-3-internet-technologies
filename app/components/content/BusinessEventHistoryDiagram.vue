@@ -14,7 +14,7 @@ const diagramSrc = `${baseURL.replace(/\/$/, '')}/diagrams/business-event-histor
       loading="lazy"
     >
     <figcaption class="mx-auto mt-4 max-w-prose text-sm leading-relaxed text-muted">
-      Совпадение хешей подтверждает версию файла, но не точность показаний термометра.
+      Если хеши совпали, у&nbsp;поставщика та же версия акта, которую подписал склад. Сколько коробок прибыло, проверяют при разгрузке.
     </figcaption>
   </figure>
 </template>
