@@ -16,3 +16,8 @@
   --color-green-900: #0A5331;
   --color-green-950: #052E16;
 }
+
+/* Keep primary-colored text readable on light backgrounds. */
+:root:not(.dark) {
+  --ui-primary: var(--ui-color-primary-600);
+}

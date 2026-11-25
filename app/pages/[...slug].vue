@@ -38,11 +38,56 @@ useSeoMeta({
         v-model:open="tocOpen"
         title="Содержание"
         :links="page.body.toc.links"
-        :ui="{ linkText: 'text-clip whitespace-normal' }"
-        @move="tocOpen = false"
+        data-article-toc
+        :ui="{
+          item: 'ms-0',
+          itemWithChildren: 'ps-0',
+          link: 'before:pointer-events-none before:absolute before:inset-y-0 before:-start-4 before:w-[11px] before:bg-(--ui-border) [&.text-primary]:before:bg-primary rtl:before:-scale-x-100',
+          linkText: 'text-clip whitespace-normal',
+          indicator: 'hidden'
+        }"
         highlight
         highlight-variant="circuit"
+        @move="tocOpen = false"
       />
     </template>
   </UPage>
 </template>
+
+<style>
+/* Draw against each wrapped link; the forwarded right slot does not carry this page's scope ID. */
+[data-article-toc] [data-slot="link"]::before {
+  --rail-column: 0px;
+  --rail-start: var(--rail-column);
+  --rail-end: var(--rail-column);
+  --rail-enter: 0px;
+  --rail-exit: 0px;
+
+  clip-path: polygon(
+    var(--rail-start) 0,
+    var(--rail-column) var(--rail-enter),
+    var(--rail-column) calc(100% - var(--rail-exit)),
+    var(--rail-end) 100%,
+    calc(var(--rail-end) + 1px) 100%,
+    calc(var(--rail-column) + 1px) calc(100% - var(--rail-exit)),
+    calc(var(--rail-column) + 1px) var(--rail-enter),
+    calc(var(--rail-start) + 1px) 0
+  );
+}
+
+[data-article-toc] li > ul > li > [data-slot="link"]::before {
+  --rail-column: 10px;
+
+  inset-inline-start: -1.75rem;
+}
+
+[data-article-toc] li > ul > li:first-child > [data-slot="link"]::before {
+  --rail-start: 0px;
+  --rail-enter: 6px;
+}
+
+[data-article-toc] li:has(+ li) > ul > li:last-child > [data-slot="link"]::before {
+  --rail-end: 0px;
+  --rail-exit: 6px;
+}
+</style>
