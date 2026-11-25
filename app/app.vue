@@ -1,10 +1,14 @@
 <script setup>
+import { ru } from '@nuxt/ui/locale'
+
+const { app } = useRuntimeConfig()
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', href: `${app.baseURL}favicon.ico` }
   ],
   htmlAttrs: {
     lang: 'ru'
@@ -18,12 +22,12 @@ useSeoMeta({
   title,
   description,
   ogTitle: title,
-  ogDescription: description,
+  ogDescription: description
 })
 </script>
 
 <template>
-  <UApp>
+  <UApp :locale="ru">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

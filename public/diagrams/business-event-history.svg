@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="260" viewBox="0 0 360 260" role="img" aria-labelledby="title description"
+  content="&lt;mxfile host=&quot;app.diagrams.net&quot;&gt;&lt;diagram id=&quot;business-event-history&quot; name=&quot;Сверка версии акта Р-42&quot;&gt;&lt;mxGraphModel adaptiveColors=&quot;auto&quot; page=&quot;1&quot; pageScale=&quot;1&quot; pageWidth=&quot;360&quot; pageHeight=&quot;260&quot; background=&quot;#f8fafc&quot;&gt;&lt;root&gt;&lt;mxCell id=&quot;0&quot;/&gt;&lt;mxCell id=&quot;1&quot; parent=&quot;0&quot;/&gt;&lt;mxCell id=&quot;copy&quot; value=&quot;&amp;lt;span style=&amp;quot;font-size:18px;color:#162438&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Копия акта&amp;lt;br&amp;gt;партии P-42&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;font-size:18px;color:#344960&amp;quot;&amp;gt;у поставщика&amp;lt;/span&amp;gt;&quot; style=&quot;rounded=1;absoluteArcSize=1;arcSize=11;whiteSpace=wrap;html=1;fillColor=#eaf3fa;strokeColor=#527492;strokeWidth=1.5;fontFamily=Arial;fontColor=#162438;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;12&quot; y=&quot;12&quot; width=&quot;160&quot; height=&quot;65&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;record&quot; value=&quot;&amp;lt;span style=&amp;quot;font-size:18px;color:#162438&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Запись&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;font-size:18px;color:#344960&amp;quot;&amp;gt;при подписании&amp;lt;/span&amp;gt;&quot; style=&quot;rounded=1;absoluteArcSize=1;arcSize=11;whiteSpace=wrap;html=1;fillColor=#eaf3fa;strokeColor=#527492;strokeWidth=1.5;fontFamily=Arial;fontColor=#162438;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;188&quot; y=&quot;12&quot; width=&quot;160&quot; height=&quot;65&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;computed&quot; value=&quot;&amp;lt;span style=&amp;quot;font-size:18px;color:#162438&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Вычислить&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;font-size:18px;color:#344960&amp;quot;&amp;gt;хеш файла&amp;lt;/span&amp;gt;&quot; style=&quot;rounded=1;absoluteArcSize=1;arcSize=11;whiteSpace=wrap;html=1;fillColor=#eaf3fa;strokeColor=#527492;strokeWidth=1.5;fontFamily=Arial;fontColor=#162438;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;12&quot; y=&quot;103&quot; width=&quot;160&quot; height=&quot;56&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;saved&quot; value=&quot;&amp;lt;span style=&amp;quot;font-size:18px;color:#162438&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Взять хеш&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;font-size:18px;color:#344960&amp;quot;&amp;gt;из записи&amp;lt;/span&amp;gt;&quot; style=&quot;rounded=1;absoluteArcSize=1;arcSize=11;whiteSpace=wrap;html=1;fillColor=#eaf3fa;strokeColor=#527492;strokeWidth=1.5;fontFamily=Arial;fontColor=#162438;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;188&quot; y=&quot;103&quot; width=&quot;160&quot; height=&quot;56&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;compare&quot; value=&quot;&amp;lt;span style=&amp;quot;font-size:21px;color:#162438&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Сравнить хеши&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;font-size:18px;color:#53437c&amp;quot;&amp;gt;Хеши совпали&amp;lt;/span&amp;gt;&quot; style=&quot;rounded=1;absoluteArcSize=1;arcSize=11;whiteSpace=wrap;html=1;fillColor=#f0effb;strokeColor=#726498;strokeWidth=1.5;fontFamily=Arial;fontColor=#162438;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;55&quot; y=&quot;187&quot; width=&quot;250&quot; height=&quot;61&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;copy-computed&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#516377;exitX=0.5;exitY=1;entryX=0.5;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;copy&quot; target=&quot;computed&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;record-saved&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#516377;exitX=0.5;exitY=1;entryX=0.5;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;record&quot; target=&quot;saved&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;computed-compare&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#516377;exitX=0.5;exitY=1;entryX=0.148;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;computed&quot; target=&quot;compare&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;saved-compare&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#516377;exitX=0.5;exitY=1;entryX=0.852;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;saved&quot; target=&quot;compare&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;&lt;/diagram&gt;&lt;/mxfile&gt;">
+  <title id="title">Сверка версии акта партии P-42</title>
+  <desc id="description">Поставщик вычисляет хеш своей копии акта партии P-42 и берёт сохранённый хеш из записи при подписании. На сверку поступают оба хеша; в этом примере они совпали.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#516377"/>
+    </marker>
+  </defs>
+  <rect width="360" height="260" rx="16" fill="#f8fafc"/>
+  <g fill="none" stroke="#516377" stroke-width="2" marker-end="url(#arrow)">
+    <path id="copy-computed" d="M92 78V102"/>
+    <path id="record-saved" d="M268 78V102"/>
+    <path id="computed-compare" d="M92 160V186"/>
+    <path id="saved-compare" d="M268 160V186"/>
+  </g>
+  <g fill="#162438" font-family="Arial, sans-serif" text-anchor="middle">
+    <g id="copy">
+      <rect x="12" y="12" width="160" height="65" rx="11" fill="#eaf3fa" stroke="#527492" stroke-width="1.5"/>
+      <text x="92" y="31" font-size="18" font-weight="700" aria-label="Копия акта партии P-42"><tspan x="92">Копия акта</tspan> <tspan x="92" dy="19">партии P-42</tspan></text>
+      <text x="92" y="69" font-size="18" fill="#344960">у поставщика</text>
+    </g>
+    <g id="record">
+      <rect x="188" y="12" width="160" height="65" rx="11" fill="#eaf3fa" stroke="#527492" stroke-width="1.5"/>
+      <text x="268" y="38.8" font-size="18" font-weight="700">Запись</text>
+      <text x="268" y="60.8" font-size="18" fill="#344960">при подписании</text>
+    </g>
+    <g id="computed">
+      <rect x="12" y="103" width="160" height="56" rx="11" fill="#eaf3fa" stroke="#527492" stroke-width="1.5"/>
+      <text x="92" y="125.3" font-size="18" font-weight="700">Вычислить</text>
+      <text x="92" y="147.3" font-size="18" fill="#344960">хеш файла</text>
+    </g>
+    <g id="saved">
+      <rect x="188" y="103" width="160" height="56" rx="11" fill="#eaf3fa" stroke="#527492" stroke-width="1.5"/>
+      <text x="268" y="125.3" font-size="18" font-weight="700">Взять хеш</text>
+      <text x="268" y="147.3" font-size="18" fill="#344960">из записи</text>
+    </g>
+    <g id="compare">
+      <rect x="55" y="187" width="250" height="61" rx="11" fill="#f0effb" stroke="#726498" stroke-width="1.5"/>
+      <text x="180" y="212.8" font-size="21" font-weight="700">Сравнить хеши</text>
+      <text x="180" y="235.3" font-size="18" fill="#53437c">Хеши совпали</text>
+    </g>
+  </g>
+</svg>

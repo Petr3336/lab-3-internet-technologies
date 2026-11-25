@@ -28,6 +28,7 @@
     "eslint": "^10.13.0",
     "eslint-plugin-better-tailwindcss": "^4.10.0",
     "typescript": "^6.0.3",
+    "vite-plugin-inspect": "^12.1.0",
     "vue-tsc": "^3.3.13"
   },
   "packageManager": "pnpm@12.15.0"

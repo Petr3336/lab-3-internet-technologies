@@ -1,49 +1,32 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <UHeader :toggle="false">
-    <template #left>
-      Лабораторная работа №3 по Интернет-технологиям
-    </template>
-    <template #right>
-      <UColorModeButton />
+  <div class="flex min-h-dvh flex-col">
+    <UHeader :toggle="false">
+      <template #left>
+        Лабораторная работа №3 по Интернет-технологиям
+      </template>
+      <template #right>
+        <UColorModeButton />
+      </template>
+    </UHeader>
 
-      <UButton
-        to=""
-        target="_blank"
-        icon="i-simple-icons-github"
-        aria-label="GitHub"
-        color="neutral"
-        variant="ghost"
-      />
-    </template>
-  </UHeader>
+    <UMain :ui="{ base: 'min-h-0 flex-1' }">
+      <UContainer>
+        <slot />
+      </UContainer>
+    </UMain>
 
-  <UMain>
-    <UContainer>
-      <slot />
-    </UContainer>
-  </UMain>
+    <USeparator />
 
-  <USeparator icon="i-simple-icons-nuxtdotjs" />
-
-  <UFooter>
-    <template #left>
-      <p class="text-sm text-muted">
-        Выполнено студентом группы ИДМ-26-01 Козыревом Петром Михайловичем
-      </p>
-    </template>
-
-    <template #right>
-      <UButton
-        to=""
-        target="_blank"
-        icon="i-simple-icons-github"
-        aria-label="GitHub"
-        color="neutral"
-        variant="ghost"
-      />
-    </template>
-  </UFooter>
+    <UFooter>
+      <template #left>
+        <p class="text-sm text-muted">
+          Выполнено студентом <br>
+          группы ИДМ-26-01 <br>
+          Козыревом Петром Михайловичем
+        </p>
+      </template>
+    </UFooter>
+  </div>
 </template>

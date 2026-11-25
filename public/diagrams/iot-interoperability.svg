@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="226" viewBox="0 0 360 226" role="img" aria-labelledby="title description"
+  content="&lt;mxfile host=&quot;app.diagrams.net&quot;&gt;&lt;diagram id=&quot;iot-interoperability&quot; name=&quot;Две возможности при одном подключении&quot;&gt;&lt;mxGraphModel adaptiveColors=&quot;auto&quot; page=&quot;1&quot; pageScale=&quot;1&quot; pageWidth=&quot;360&quot; pageHeight=&quot;226&quot; background=&quot;#f8fafc&quot;&gt;&lt;root&gt;&lt;mxCell id=&quot;0&quot;/&gt;&lt;mxCell id=&quot;1&quot; parent=&quot;0&quot;/&gt;&lt;mxCell id=&quot;connection&quot; value=&quot;&amp;lt;span style=&amp;quot;font-size:20px;color:#162438&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Приложение видит светильник&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&quot; style=&quot;rounded=1;absoluteArcSize=1;arcSize=11;whiteSpace=wrap;html=1;fillColor=#eaf3fa;strokeColor=#527492;strokeWidth=1.5;fontFamily=Arial;fontColor=#162438;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;12&quot; y=&quot;12&quot; width=&quot;336&quot; height=&quot;55&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;power&quot; value=&quot;&amp;lt;span style=&amp;quot;font-size:22px;color:#162438&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Включить&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;font-size:18px;color:#245e51&amp;quot;&amp;gt;Светильник&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;font-size:18px;color:#245e51&amp;quot;&amp;gt;загорается&amp;lt;/span&amp;gt;&quot; style=&quot;rounded=1;absoluteArcSize=1;arcSize=11;whiteSpace=wrap;html=1;fillColor=#eaf8f4;strokeColor=#387b6d;strokeWidth=1.5;fontFamily=Arial;fontColor=#162438;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;12&quot; y=&quot;109&quot; width=&quot;160&quot; height=&quot;105&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;brightness&quot; value=&quot;&amp;lt;span style=&amp;quot;font-size:22px;color:#162438&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Изменить&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;font-size:22px;color:#162438&amp;quot;&amp;gt;&amp;lt;b&amp;gt;яркость&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;font-size:18px;color:#744f20&amp;quot;&amp;gt;Недоступно&amp;lt;/span&amp;gt;&quot; style=&quot;rounded=1;absoluteArcSize=1;arcSize=11;whiteSpace=wrap;html=1;fillColor=#fbf3e5;strokeColor=#8a6b38;strokeWidth=1.5;fontFamily=Arial;fontColor=#162438;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;188&quot; y=&quot;109&quot; width=&quot;160&quot; height=&quot;105&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;connection-power&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#516377;exitX=0.23809523809523808;exitY=1;entryX=0.5;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;connection&quot; target=&quot;power&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;connection-brightness&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#516377;exitX=0.7619047619047619;exitY=1;entryX=0.5;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;connection&quot; target=&quot;brightness&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;&lt;/diagram&gt;&lt;/mxfile&gt;">
+  <title id="title">Две возможности при одном подключении</title>
+  <desc id="description">Одно приложение видит светильник. Включение срабатывает: светильник загорается. Регулировка яркости в том же приложении недоступна.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#516377"/>
+    </marker>
+  </defs>
+  <rect width="360" height="226" rx="16" fill="#f8fafc"/>
+  <g fill="none" stroke="#516377" stroke-width="2" marker-end="url(#arrow)">
+    <path id="connection-power" d="M92 68V108"/>
+    <path id="connection-brightness" d="M268 68V108"/>
+  </g>
+  <g fill="#162438" font-family="Arial, sans-serif" text-anchor="middle">
+    <g id="connection">
+      <rect x="12" y="12" width="336" height="55" rx="11" fill="#eaf3fa" stroke="#527492" stroke-width="1.5"/>
+      <text x="180" y="45.5" font-size="20" font-weight="700">Приложение видит светильник</text>
+    </g>
+    <g id="power">
+      <rect x="12" y="109" width="160" height="105" rx="11" fill="#eaf8f4" stroke="#387b6d" stroke-width="1.5"/>
+      <text x="92" y="146.2" font-size="22" font-weight="700">Включить</text>
+      <text x="92" y="168.8" font-size="18" fill="#245e51">Светильник</text>
+      <text x="92" y="190.8" font-size="18" fill="#245e51">загорается</text>
+    </g>
+    <g id="brightness">
+      <rect x="188" y="109" width="160" height="105" rx="11" fill="#fbf3e5" stroke="#8a6b38" stroke-width="1.5"/>
+      <text x="268" y="144.2" font-size="22" font-weight="700">Изменить</text>
+      <text x="268" y="170.2" font-size="22" font-weight="700">яркость</text>
+      <text x="268" y="192.8" font-size="18" fill="#744f20">Недоступно</text>
+    </g>
+  </g>
+</svg>
