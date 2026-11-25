@@ -1,6 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 concurrency:
@@ -25,9 +27,12 @@ jobs:
           node-version: 24
       - uses: pnpm/action-setup@v6
       - run: pnpm install --frozen-lockfile
-      - run: pnpm exec nuxt build --preset github_pages
+      - name: Build the static site
+        run: pnpm run build:pages
         env:
           NUXT_APP_BASE_URL: ${{ format('{0}/', steps.pages.outputs.base_path) }}
+      - name: Verify the prerendered home page
+        run: test -s .output/public/index.html
       - uses: actions/upload-pages-artifact@v5
         with:
           path: .output/public

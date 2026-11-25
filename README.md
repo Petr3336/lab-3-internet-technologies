@@ -2,6 +2,14 @@
 
 Работу выполнил студент группы ИДМ-26-01 Козырев Петр
 
+## Публикация на GitHub Pages
+
+В настройках репозитория выберите **Settings → Pages → Build and deployment → Source → GitHub Actions**. Сайт публикуется после отправки изменений в `main`. Ручной запуск доступен в **Actions → Deploy to GitHub Pages → Run workflow** для ветки `main`.
+
+Адрес сайта после публикации: <https://petr3336.github.io/lab-3-internet-technologies/>.
+
+Для локальной проверки выполните `pnpm run build:pages`. Статические файлы появятся в `.output/public`. Чтобы собрать сайт с тем же путём, что и на GitHub Pages, задайте `NUXT_APP_BASE_URL=/lab-3-internet-technologies/` в окружении перед сборкой.
+
 > Задание
 > 
 > В рамках выполнения второй лабораторной работы Вам необходимо создать лонгрид (long read) на основе материалов, подготовленных в лабораторной работе №1.
